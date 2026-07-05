@@ -52,7 +52,7 @@ public class TareaController {
 
 	}
 	
-	@PreAuthorize("hasRole('ADMIN', 'USER')")
+	@PreAuthorize("hasAnyRole('ADMIN', 'USER')")
 	@GetMapping
 	public ResponseEntity<?> listar() {
 

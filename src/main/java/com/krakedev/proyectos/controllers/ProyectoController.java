@@ -46,7 +46,7 @@ public class ProyectoController {
 		}
 	}
 
-	@PreAuthorize("hasRole('ADMIN', 'USER')")
+	@PreAuthorize("hasAnyRole('ADMIN', 'USER')")
 	@GetMapping
 	public ResponseEntity<?> listar() {
 
