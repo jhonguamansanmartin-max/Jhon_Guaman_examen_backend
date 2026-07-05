@@ -5,4 +5,4 @@ Video 1: Demostracion Funcional de la Aplicacion Full-Stack (max 3 min)
 Enlace: https://drive.google.com/file/d/13cD1bOHu7Vku1VYf9SUfO-Gm5Tz3q1VS/view?usp=sharing
 
 Video 2: Sustentacion del Codigo Fuente y Arquitectura en React (max 3 min)
-Enlace: [PEGAR ENLACE AQUI]
+Enlace: https://drive.google.com/file/d/1p87po0r0HVHLLLJ5e90OioDb0s1hM-AF/view?usp=sharing
