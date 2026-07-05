@@ -26,6 +26,11 @@ public class ProyectoController {
 		this.service = service;
 	}
 
+	@GetMapping("/publico/resumen")
+	public ResponseEntity<Long> resumenPublico() {
+		return ResponseEntity.ok(service.contarProyectos());
+	}
+
 	@PreAuthorize("hasRole('ADMIN')")
 	@PostMapping
 	public ResponseEntity<?> guardar(@RequestBody Proyecto proyecto) {

@@ -46,6 +46,10 @@ public class ProyectoService {
 		return repository.save(encontrado);
 	}
 
+	public long contarProyectos() {
+		return repository.count();
+	}
+
 	public boolean eliminar(int id) {
 		Proyecto encontrado = buscarPorId(id);
 
