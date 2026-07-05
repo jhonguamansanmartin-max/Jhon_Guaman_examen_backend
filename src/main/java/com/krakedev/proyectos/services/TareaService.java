@@ -28,6 +28,11 @@ public class TareaService {
 	}
 
 	public Tarea guardar(Tarea tarea) {
+		String prioridad = tarea.getPrioridad();
+		if (prioridad == null || (!prioridad.equals("ALTA") && !prioridad.equals("MEDIA") && !prioridad.equals("BAJA"))) {
+			throw new RuntimeException("Prioridad no válida");
+		}
+
 		Proyecto proyecto = proyectoRepository.findById(tarea.getProyecto().getId())
 				.orElseThrow(() -> new RuntimeException("El Proyecto no existe"));
 
